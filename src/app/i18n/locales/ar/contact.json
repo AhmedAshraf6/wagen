@@ -1,0 +1,20 @@
+{
+  "title": "تواصل معنا ",
+  "name": {
+    "label": "الاسم",
+    "placeholder": "محمد"
+  },
+  "email": {
+    "label": "البريد الالكتروني",
+    "placeholder": "user@gmail.com"
+  },
+  "phone": {
+    "label": "رقم الجوال ",
+    "placeholder": "000 000 00 +966 "
+  },
+  "type": {
+    "label": "النشاط التجاري",
+    "options": ["مطعم ", "كافي شوب"]
+  },
+  "button": "ارسال"
+}
