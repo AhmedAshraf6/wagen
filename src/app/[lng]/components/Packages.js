@@ -9,6 +9,7 @@ const Packages = async ({ lng }) => {
     <div className='py-8 sm:py-24'>
       <div className='text-center mb-4 md:mb-12'>
         <h3 className='text-black font-bold text-xl'>{t('title')}</h3>
+        {/* <div className='flex justify-between'></div> */}
       </div>
     </div>
   );

@@ -19,8 +19,8 @@ export default async function Hero({ lng }) {
             {t('title2')}
           </h4>
           <div>
-            {benfits.map((benfit) => (
-              <div className='flex py-2 gap-2'>
+            {benfits.map((benfit, index) => (
+              <div className='flex py-2 gap-2' key={index}>
                 <Image
                   width={100}
                   height={100}
