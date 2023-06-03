@@ -30,8 +30,8 @@ const Packages = async ({ lng }) => {
               <h2 className='font-bold text-2xl '>{t('package1.salary')}</h2>
             </div>
             <div className='flex flex-col gap-y-3'>
-              {benfits1.map((benfit) => (
-                <div className='flex gap-3'>
+              {benfits1.map((benfit, index) => (
+                <div className='flex gap-3' key={index}>
                   <Image
                     width={100}
                     height={100}
@@ -69,8 +69,8 @@ const Packages = async ({ lng }) => {
               <h2 className='font-bold text-2xl '>{t('package2.salary')}</h2>
             </div>
             <div className='flex flex-col gap-y-3'>
-              {benfits2.map((benfit) => (
-                <div className='flex gap-3'>
+              {benfits2.map((benfit, index) => (
+                <div className='flex gap-3' key={index}>
                   <Image
                     width={100}
                     height={100}
