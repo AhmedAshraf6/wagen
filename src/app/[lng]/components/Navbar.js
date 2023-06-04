@@ -24,7 +24,6 @@ const Navbar = async ({ lng }) => {
             className='cursor-pointer w-[100px] h-[100px] '
           />
         </Link>
-        <LangSwitcher lng={lng} />
         <ButtonNav navitems={navitems} lng={lng} />
       </div>
       <div className='w-full hidden lg:flex items-center justify-between'>

@@ -1,6 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import { LangSwitcher } from './LangSwitcher';
+import Link from 'next/link';
+import Image from 'next/image';
+import s from '../../../../public/s.png';
+import b from '../../../../public/b.png';
 export default function ButtonNav({ navitems, lng }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -37,6 +41,29 @@ export default function ButtonNav({ navitems, lng }) {
                   {item.name}
                 </a>
               ))}
+            {lng == 'en' ? (
+              <Link href='/ar' className='flex items-center gap-1'>
+                <Image
+                  width={100}
+                  height={100}
+                  className='object-contain w-[20px] h-[20px]'
+                  src={s}
+                  alt='image 1'
+                />
+                العربية
+              </Link>
+            ) : (
+              <Link href='/en' className='flex items-center gap-1'>
+                <Image
+                  width={100}
+                  height={100}
+                  className='object-contain w-[20px] h-[20px]'
+                  src={b}
+                  alt='image 1'
+                />
+                English
+              </Link>
+            )}
           </ul>
         </div>
       ) : null}
