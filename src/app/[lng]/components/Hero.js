@@ -45,7 +45,7 @@ export default async function Hero({ lng }) {
         <Image
           width={500}
           height={500}
-          className='object-contain'
+          className='object-contain '
           src={img1}
           alt='image 1'
         />

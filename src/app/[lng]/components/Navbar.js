@@ -21,7 +21,7 @@ const Navbar = async ({ lng }) => {
             width={150}
             height={150}
             alt='logo image'
-            className='cursor-pointer w-[80px] h-[100px] '
+            className='cursor-pointer w-[100px] h-[100px] '
           />
         </Link>
         <LangSwitcher lng={lng} />
@@ -34,7 +34,7 @@ const Navbar = async ({ lng }) => {
             width={150}
             height={150}
             alt='logo image'
-            className='cursor-pointer w-[80px] h-[100px] '
+            className='cursor-pointer  h-[100px] '
           />
         </Link>
         <ul className='flex gap-3'>
