@@ -1,6 +1,6 @@
 import { useTranslation } from '@/app/i18n';
 import React from 'react';
-import img1 from '../../../../public/img1.svg';
+import img1 from '../../../../public/img1.webp';
 import right from '../../../../public/right.svg';
 import Image from 'next/image';
 

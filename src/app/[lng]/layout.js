@@ -1,7 +1,7 @@
 import { dir } from 'i18next';
 import { languages } from '../i18n/settings';
 import { Tajawal, Josefin_Sans } from 'next/font/google';
-
+// import img from '../../../public/favicon.ico';
 const arb = Tajawal({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
@@ -25,6 +25,9 @@ export async function generateStaticParams() {
 export const metadata = {
   title: 'ويجن',
   description: 'ويجن',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children, params: { lng } }) {
@@ -39,7 +42,6 @@ export default function RootLayout({ children, params: { lng } }) {
         <Navbar lng={lng} />
         {children}
       </body>
-      {/*  */}
     </html>
   );
 }
