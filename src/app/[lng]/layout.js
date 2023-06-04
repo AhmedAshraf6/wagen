@@ -22,6 +22,10 @@ import Navbar from './components/Navbar';
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
+export const metadata = {
+  title: 'ويجن',
+  description: 'ويجن',
+};
 
 export default function RootLayout({ children, params: { lng } }) {
   return (
