@@ -9,6 +9,7 @@ import Clients from './components/Clients';
 import Packages from './components/Packages';
 import Contact from './components/Contact';
 import GooMap from './components/GooMap';
+import Footer from './components/Footer';
 // import Loading from './Loading';
 // import { Footer } from './components/Footer';
 
@@ -34,6 +35,7 @@ export default async function Page({ params: { lng } }) {
       <Packages lng={lng} />
       <Contact lng={lng} />
       <GooMap />
+      <Footer lng={lng} />
     </main>
   );
 }

@@ -9,7 +9,10 @@ export default async function Hero({ lng }) {
   const benfits = t('props', { returnObjects: true });
 
   return (
-    <section className='w-full min-h-[80vh] px-5 md:px-15  py-10 lg:px-32 flex justify-center items-center font-medium  dark:text-light '>
+    <section
+      className='w-full min-h-[80vh] px-5 md:px-15  py-10 lg:px-32 flex justify-center items-center font-medium  dark:text-light '
+      id='home'
+    >
       <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5'>
         <div className='flex flex-col gap-y-4'>
           <h3 className='text-black font-bold text-lg lg:text-xl'>
