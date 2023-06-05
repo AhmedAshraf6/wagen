@@ -3,6 +3,7 @@ import Image from 'next/image';
 import img1 from '../../../../public/clients/img1.svg';
 import img2 from '../../../../public/clients/img2.svg';
 import img3 from '../../../../public/clients/img3.svg';
+import ClinetsImages from './ClinetsImages';
 
 const Clients = async ({ lng }) => {
   const { t } = await useTranslation(lng, 'clients');
@@ -16,7 +17,7 @@ const Clients = async ({ lng }) => {
           {t('paragraph')}
         </p>
       </div>
-      <div className='w-full px-5 md:px-15 lg:px-32  flex justify-center lg:justify-between gap-6 items-center flex-wrap lg:flex-nowrap '>
+      {/* <div className='w-full px-5 md:px-15 lg:px-32  flex justify-center lg:justify-between gap-6 items-center flex-wrap lg:flex-nowrap '>
         <div className='px-20 flex flex-col justify-center items-center py-6 sm:py-10 gap-y-4'>
           <Image
             width={200}
@@ -47,7 +48,8 @@ const Clients = async ({ lng }) => {
           />
           <h1 className='text-[#5F6061] text-lg font-semibold '>{s3}</h1>
         </div>
-      </div>
+      </div> */}
+      <ClinetsImages />
     </div>
   );
 };

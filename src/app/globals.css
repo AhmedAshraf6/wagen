@@ -5,3 +5,21 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.swiper-button-prev {
+  background-image: url('../../public/arr-right.svg') !important;
+}
+.swiper-button-next {
+  background-image: url('../../public/arr-left.svg') !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-size: 40px 38px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '' !important;
+}
