@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 // Import Swiper React components
-import { Navigation } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Autoplay, Navigation } from 'swiper';
 
 import img1 from '../../../../public/clients/img1.svg';
 import img2 from '../../../../public/clients/img2.svg';
@@ -22,10 +22,15 @@ export default function ClinetsImages() {
     <div className='select-none'>
       <Swiper
         // install Swiper modules
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         spaceBetween={50}
         slidesPerView={4}
         navigation
+        // loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         scrollbar={{ draggable: true }}
         breakpoints={{
           0: {
@@ -41,6 +46,7 @@ export default function ClinetsImages() {
             slidesPerView: 3,
           },
         }}
+        className='mySwiper'
       >
         <SwiperSlide>
           <div className='flex justify-center flex-col items-center'>
