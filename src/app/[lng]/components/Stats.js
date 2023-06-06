@@ -23,7 +23,7 @@ const Stats = async ({ lng }) => {
 
   return (
     <div className=' bg-[#f4f4f4]'>
-      <div className='relative w-full h-full z-0'>
+      <div className='relative w-full h-full z-0 hidden lg:block'>
         <Image
           width={200}
           height={200}
