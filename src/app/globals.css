@@ -5,6 +5,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 .swiper-button-prev {
   background-image: url('../../public/arr-right.svg') !important;
 }
