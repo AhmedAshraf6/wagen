@@ -1,4 +1,4 @@
-import { useTranslation } from '@/app/i18n';
+'use client';
 import Image from 'next/image';
 import img1 from '../../../../public/stats/img1.svg';
 import img2 from '../../../../public/stats/img2.svg';
@@ -16,11 +16,17 @@ import img19 from '../../../../public/stats/background/img9.svg';
 import img110 from '../../../../public/stats/background/img10.svg';
 import img111 from '../../../../public/stats/background/img11.svg';
 import img112 from '../../../../public/stats/background/img12.svg';
-
-const Stats = async ({ lng }) => {
-  const { t } = await useTranslation(lng, 'stats');
+// for animation on scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import { useTranslation } from '@/app/i18n/client';
+const Stats = ({ lng }) => {
+  const { t } = useTranslation(lng, 'stats');
   const [s1, s2, s3] = t('stats', { returnObjects: true });
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className=' bg-[#f4f4f4]'>
       <div className='relative w-full h-full z-0 hidden lg:block'>
@@ -115,6 +121,9 @@ const Stats = async ({ lng }) => {
         <div
           className='bg-white px-20 flex flex-col justify-center items-center py-10 gap-y-4 '
           style={{ borderRadius: '25% 10%' }}
+          data-aos='fade-left'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
         >
           <Image
             width={200}
@@ -128,6 +137,9 @@ const Stats = async ({ lng }) => {
         <div
           className='bg-white px-20 flex flex-col justify-center items-center py-10 gap-y-4'
           style={{ borderRadius: '25% 10%' }}
+          data-aos='zoom-in'
+          data-aos-offset='400'
+          data-aos-easing='ease-in-sine'
         >
           <Image
             width={200}
@@ -141,6 +153,9 @@ const Stats = async ({ lng }) => {
         <div
           className='bg-white px-20 flex flex-col justify-center items-center py-10 gap-y-4'
           style={{ borderRadius: '25% 10%' }}
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
         >
           <Image
             width={200}
