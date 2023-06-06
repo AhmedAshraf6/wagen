@@ -8,7 +8,7 @@ const Packages = async ({ lng }) => {
   const benfits2 = t('package2.benifits', { returnObjects: true });
 
   return (
-    <div className='w-full px-5 md:px-15 lg:px-32 py-8 sm:py-24' id='packages'>
+    <div className='w-full px-5 md:px-15 lg:px-20 py-8 sm:py-24' id='packages'>
       <div className='text-center mb-4 md:mb-12'>
         <h3 className='text-black font-bold text-xl mb-5 sm:mb-10'>
           {t('title')}

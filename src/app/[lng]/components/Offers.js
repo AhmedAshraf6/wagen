@@ -1,13 +1,13 @@
 import React from 'react';
 import { useTranslation } from '@/app/i18n';
 import Image from 'next/image';
-import img2 from '../../../../public/img2.svg';
-import img3 from '../../../../public/img3.svg';
+import img2 from '../../../../public/img2.png';
+import img3 from '../../../../public/img3.png';
 const Offers = async ({ lng }) => {
   const { t } = await useTranslation(lng, 'offers');
 
   return (
-    <div className='w-full px-5 md:px-15 lg:px-32 py-8 lg:py-24'>
+    <div className='w-full px-5 md:px-15 lg:px-20 py-8 lg:py-24'>
       <div className='flex  flex-col md:flex-row items-center justify-between gap-x-44 gap-y-8'>
         <div className='flex flex-col gap-y-5 w-full '>
           <h3 className='text-primary text-lg lg:text-xl font-bold'>

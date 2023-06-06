@@ -17,38 +17,7 @@ const Clients = async ({ lng }) => {
           {t('paragraph')}
         </p>
       </div>
-      {/* <div className='w-full px-5 md:px-15 lg:px-32  flex justify-center lg:justify-between gap-6 items-center flex-wrap lg:flex-nowrap '>
-        <div className='px-20 flex flex-col justify-center items-center py-6 sm:py-10 gap-y-4'>
-          <Image
-            width={200}
-            height={200}
-            className='object-contain w-[150px] h-[150px]'
-            src={img3}
-            alt='asd'
-          />
-          <h1 className='text-[#5F6061] text-lg font-semibold '>{s1}</h1>
-        </div>
-        <div className=' px-20 flex flex-col justify-center items-center py-6 sm:py-10 gap-y-4'>
-          <Image
-            width={200}
-            height={200}
-            className='object-contain w-[150px] h-[150px]'
-            src={img2}
-            alt='asd'
-          />
-          <h1 className='text-[#5F6061] text-lg  font-semibold'>{s2}</h1>
-        </div>
-        <div className=' px-20 flex flex-col justify-center items-center py-6 sm:py-10 gap-y-4'>
-          <Image
-            width={200}
-            height={200}
-            className='object-contain w-[150px] h-[150px]'
-            src={img1}
-            alt='asd'
-          />
-          <h1 className='text-[#5F6061] text-lg font-semibold '>{s3}</h1>
-        </div>
-      </div> */}
+
       <ClinetsImages />
     </div>
   );

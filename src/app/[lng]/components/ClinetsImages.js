@@ -1,12 +1,10 @@
 'use client';
 import React from 'react';
 // Import Swiper React components
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper';
-
 import img1 from '../../../../public/clients/img1.svg';
 import img2 from '../../../../public/clients/img2.svg';
 import img3 from '../../../../public/clients/img3.svg';

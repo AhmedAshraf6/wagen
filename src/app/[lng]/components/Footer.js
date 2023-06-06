@@ -10,7 +10,7 @@ export default async function Footer({ lng }) {
   const { t } = await useTranslation(lng, 'footer');
   return (
     <footer>
-      <div className='w-full  py-8 sm:py-24  px-5 md:px-15 lg:px-32 flex flex-col sm:flex-row justify-between items-start sm:items-center'>
+      <div className='w-full  py-8 sm:py-24  px-5 md:px-15 lg:px-20 flex flex-col sm:flex-row justify-between items-start sm:items-center'>
         <div className='flex flex-col gap-2'>
           <h3 className='text-lg sm:text-xl font-bold  text-black'>
             {t('contactInfo.title')}

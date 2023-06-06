@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import logo from '../../../../public/logo.svg';
+import logo2 from '../../../../public/logo2.svg';
 
 import Image from 'next/image';
 import { LangSwitcher } from './LangSwitcher';
@@ -12,7 +13,7 @@ const Navbar = async ({ lng }) => {
   const navitems = t('navItems', { returnObjects: true });
 
   return (
-    <header className='w-full px-5 md:px-15 lg:px-32 py-2 sm:py-4 font-medium  dark:text-light'>
+    <header className='w-full px-5 md:px-15 lg:px-20 py-4 sm:py-6 font-medium  dark:text-light'>
       {/* small screen */}
       <div className='w-full flex lg:hidden items-center justify-between '>
         <Link href='/'>
@@ -21,7 +22,7 @@ const Navbar = async ({ lng }) => {
             width={150}
             height={150}
             alt='logo image'
-            className='cursor-pointer w-[100px] h-[100px] '
+            className='cursor-pointer '
           />
         </Link>
         <ButtonNav navitems={navitems} lng={lng} />
@@ -33,7 +34,7 @@ const Navbar = async ({ lng }) => {
             width={150}
             height={150}
             alt='logo image'
-            className='cursor-pointer  h-[100px] '
+            className='cursor-pointer '
           />
         </Link>
         <ul className='flex gap-3'>

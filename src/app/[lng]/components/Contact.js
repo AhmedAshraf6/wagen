@@ -8,7 +8,7 @@ const Clients = async ({ lng }) => {
 
   return (
     <div className=' bg-[#F3F4F4] pt-8 pb-14 sm:py-24' id='contact'>
-      <div className='w-full px-5 md:px-15 lg:px-32'>
+      <div className='w-full px-5 md:px-15 lg:px-20'>
         <div className='text-center mb-4 md:mb-12'>
           <h3 className='text-black font-bold text-xl'>{t('title')}</h3>
         </div>

@@ -10,7 +10,7 @@ export default async function Hero({ lng }) {
 
   return (
     <section
-      className='w-full min-h-[80vh] px-5 md:px-15  py-10 lg:px-32 flex justify-center items-center font-medium  dark:text-light '
+      className='w-full min-h-[80vh] px-5 md:px-15  py-10 lg:px-20 flex justify-center items-center font-medium  dark:text-light '
       id='home'
     >
       <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5'>
@@ -36,10 +36,12 @@ export default async function Hero({ lng }) {
             ))}
           </div>
           <div className='flex justify-start'>
-            <button className='text-lg text-white bg-primary py-2 px-5 rounded-lg'>
-              {' '}
+            <a
+              className='text-lg text-white bg-primary py-2 px-5 rounded-lg'
+              href='#contact'
+            >
               {t('button')}
-            </button>
+            </a>
           </div>
         </div>
         <Image

@@ -10,6 +10,7 @@ import Packages from './components/Packages';
 import Contact from './components/Contact';
 import GooMap from './components/GooMap';
 import Footer from './components/Footer';
+import Menu from './components/Menu';
 // import Loading from './Loading';
 // import { Footer } from './components/Footer';
 
@@ -31,6 +32,7 @@ export default async function Page({ params: { lng } }) {
       <Hero lng={lng} />
       <Stats lng={lng} />
       <Offers lng={lng} />
+      <Menu lng={lng} />
       <Clients lng={lng} />
       <Packages lng={lng} />
       <Contact lng={lng} />
