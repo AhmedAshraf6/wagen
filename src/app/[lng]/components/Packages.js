@@ -14,9 +14,12 @@ const Packages = async ({ lng }) => {
           {t('title')}
         </h3>
 
-        <div className='flex flex-col sm:flex-row justify-center sm:justify-between gap-4'>
+        <div className='flex flex-col sm:flex-row justify-center sm:justify-evenly gap-10'>
           {/* Package 1 */}
-          <div className='flex-1 text-[#F7F7F7]'>
+          <div
+            className='bg-[#F7F7F7] text-[#F7F7F7] md:w-[40%] pb-6'
+            style={{ borderTopLeftRadius: '100px' }}
+          >
             <div
               className='px-20 py-10 flex  justify-center items-center bg-primary text-xl font-bold text-white'
               style={{ borderRadius: '100px / 120px 10px' }}
@@ -29,7 +32,7 @@ const Packages = async ({ lng }) => {
               </span>
               <h2 className='font-bold text-2xl '>{t('package1.salary')}</h2>
             </div>
-            <div className='flex flex-col gap-y-3'>
+            <div className='flex flex-col gap-y-3 px-7'>
               {benfits1.map((benfit, index) => (
                 <div className='flex gap-3' key={index}>
                   <Image
@@ -55,7 +58,10 @@ const Packages = async ({ lng }) => {
             </div>
           </div>
           {/* Package 2 */}
-          <div className='flex-1 text-[#F7F7F7]'>
+          <div
+            className='bg-[#F7F7F7] text-[#F7F7F7] md:w-[40%] pb-6'
+            style={{ borderTopLeftRadius: '100px' }}
+          >
             <div
               className='px-20 py-10 flex  justify-center items-center bg-secondary text-xl font-bold text-white'
               style={{ borderRadius: '100px / 120px 10px' }}
@@ -68,7 +74,7 @@ const Packages = async ({ lng }) => {
               </span>
               <h2 className='font-bold text-2xl '>{t('package2.salary')}</h2>
             </div>
-            <div className='flex flex-col gap-y-3'>
+            <div className='flex flex-col gap-y-3 px-7'>
               {benfits2.map((benfit, index) => (
                 <div className='flex gap-3' key={index}>
                   <Image
