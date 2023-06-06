@@ -1,6 +1,7 @@
 import { dir } from 'i18next';
 import { languages } from '../i18n/settings';
 import { Tajawal, Josefin_Sans } from 'next/font/google';
+
 // import img from '../../../public/favicon.ico';
 const arb = Tajawal({
   weight: ['400', '500', '700'],
@@ -37,7 +38,6 @@ export default function RootLayout({ children, params: { lng } }) {
       dir={dir(lng)}
       className={`${arb.variable} ${eng.variable}`}
     >
-      <head />
       <body>
         <Navbar lng={lng} />
         {children}

@@ -13,7 +13,7 @@ const Navbar = async ({ lng }) => {
   const navitems = t('navItems', { returnObjects: true });
 
   return (
-    <header className='w-full px-5 md:px-15 lg:px-20 py-4 sm:py-6 font-medium  dark:text-light'>
+    <header className='w-full px-5 md:px-14 lg:px-20 py-4 sm:py-6 font-medium  dark:text-light'>
       {/* small screen */}
       <div className='w-full flex lg:hidden items-center justify-between '>
         <Link href='/'>
@@ -28,7 +28,7 @@ const Navbar = async ({ lng }) => {
         <ButtonNav navitems={navitems} lng={lng} />
       </div>
       <div className='w-full hidden lg:flex items-center justify-between'>
-        <Link href='/'>
+        <Link href='/' className='m-0 p-0'>
           <Image
             src={logo}
             width={150}
