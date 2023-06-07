@@ -16,27 +16,23 @@ const Navbar = async ({ lng }) => {
     <header className='w-full px-5 md:px-14 lg:px-20 py-4 sm:py-6 font-medium  dark:text-light'>
       {/* small screen */}
       <div className='w-full flex lg:hidden items-center justify-between '>
-        <Link href='/'>
-          <Image
-            src={logo}
-            width={150}
-            height={150}
-            alt='logo image'
-            className='cursor-pointer '
-          />
-        </Link>
+        <Image
+          src={logo}
+          width={150}
+          height={150}
+          alt='logo image'
+          className='cursor-pointer '
+        />
         <ButtonNav navitems={navitems} lng={lng} />
       </div>
       <div className='w-full hidden lg:flex items-center justify-between'>
-        <Link href='/' className='m-0 p-0'>
-          <Image
-            src={logo}
-            width={150}
-            height={150}
-            alt='logo image'
-            className='cursor-pointer '
-          />
-        </Link>
+        <Image
+          src={logo}
+          width={150}
+          height={150}
+          alt='logo image'
+          className='cursor-pointer '
+        />
         <ul className='flex gap-3'>
           {navitems &&
             navitems.map((item, index) => (

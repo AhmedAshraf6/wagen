@@ -12,6 +12,7 @@ import GooMap from './components/GooMap';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
 import ScrollToTop from './components/ScrollToTopCom';
+import Contact2 from './components/Contact2';
 // import Loading from './Loading';
 // import { Footer } from './components/Footer';
 
@@ -36,7 +37,8 @@ export default async function Page({ params: { lng } }) {
       <Menu lng={lng} />
       <Clients lng={lng} />
       <Packages lng={lng} />
-      <Contact lng={lng} />
+      {/* <Contact lng={lng} /> */}
+      <Contact2 />
       <GooMap />
       <Footer lng={lng} />
       <ScrollToTop />

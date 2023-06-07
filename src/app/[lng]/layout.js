@@ -19,6 +19,7 @@ const eng = Josefin_Sans({
 
 import '../globals.css';
 import Navbar from './components/Navbar';
+import HubSProvider from './components/HubSProvider';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -40,7 +41,7 @@ export default function RootLayout({ children, params: { lng } }) {
     >
       <body>
         <Navbar lng={lng} />
-        {children}
+        <HubSProvider>{children}</HubSProvider>
       </body>
     </html>
   );
