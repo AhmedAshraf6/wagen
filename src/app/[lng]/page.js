@@ -16,13 +16,6 @@ import Menu from './components/Menu';
 import ScrollToTop from './components/ScrollToTopCom';
 import Contact2 from './components/Contact2';
 
-// import TransitionEffect from './components/TransitionEffect';
-// import Loading from './Loading';
-// import { Footer } from './components/Footer';
-
-// const Stats = lazy(() => import('./components/Stats'));
-// const Footer = lazy(() => import('./components/Footer'));
-
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng);
   return (
