@@ -17,7 +17,10 @@ export const LangSwitcher = async ({ lng }) => {
           return (
             <span key={l}>
               {index > 0 && ' or '}
-              <Link href={`/${l}`} className='flex items-center gap-1'>
+              <Link
+                href={`/${l}`}
+                className='flex items-center gap-1 hover:text-primary transition-all duration-200'
+              >
                 {l == 'en' ? (
                   <Image
                     width={100}
