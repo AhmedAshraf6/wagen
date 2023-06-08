@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import logo from '../../../../public/logo.svg';
-import logo2 from '../../../../public/logo2.svg';
+import logo from '../../../../public/logo-edit.webp';
+// import logo2 from '../../../../public/logo2.svg';
 
 import Image from 'next/image';
 import { LangSwitcher } from './LangSwitcher';
@@ -21,18 +21,13 @@ const Navbar = async ({ lng }) => {
           width={150}
           height={150}
           alt='logo image'
-          className='cursor-pointer '
+          className='cursor-pointer w-[120px]'
         />
         <ButtonNav navitems={navitems} lng={lng} />
       </div>
       <div className='w-full hidden lg:flex items-center justify-between'>
-        <Image
-          src={logo}
-          width={150}
-          height={150}
-          alt='logo image'
-          className='cursor-pointer '
-        />
+        <Image src={logo} alt='logo image' className='cursor-pointer ' />
+
         <ul className='flex gap-3'>
           {navitems &&
             navitems.map((item, index) => (

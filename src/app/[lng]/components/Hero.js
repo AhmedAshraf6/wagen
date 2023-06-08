@@ -10,10 +10,10 @@ export default async function Hero({ lng }) {
 
   return (
     <section
-      className='w-full min-h-[80vh] px-5 md:px-15  py-10 lg:px-20 flex justify-center items-center font-medium  dark:text-light '
+      className='w-full min-h-[80vh] px-5 md:px-14  py-10 lg:px-20 flex   items-center font-medium  dark:text-light '
       id='home'
     >
-      <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5'>
+      <div className='w-full flex flex-col lg:flex-row justify-start lg:justify-between items-start gap-5'>
         <div className='flex flex-col gap-y-4'>
           <h3 className='text-black font-bold text-lg lg:text-xl'>
             {t('title1')}
