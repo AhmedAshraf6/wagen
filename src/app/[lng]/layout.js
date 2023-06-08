@@ -20,6 +20,7 @@ const eng = Josefin_Sans({
 import '../globals.css';
 import Navbar from './components/Navbar';
 import HubSProvider from './components/HubSProvider';
+import TransitionEffect from './components/TransitionEffect';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -42,6 +43,7 @@ export default function RootLayout({ children, params: { lng } }) {
       <body>
         <Navbar lng={lng} />
         <HubSProvider>{children}</HubSProvider>
+        <TransitionEffect />
       </body>
     </html>
   );

@@ -37,7 +37,7 @@ export default async function Hero({ lng }) {
           </div>
           <div className='flex justify-start'>
             <a
-              className='text-lg text-white bg-primary py-2 px-5 rounded-lg'
+              className='text-lg text-white bg-primary py-2 px-5 rounded-lg hover:bg-transparent border-primary border-2 hover:text-secondary duration-200 transition-all'
               href='#contact'
             >
               {t('button')}
