@@ -19,7 +19,6 @@ const eng = Josefin_Sans({
 
 import '../globals.css';
 import Navbar from './components/Navbar';
-import HubSProvider from './components/HubSProvider';
 import TransitionEffect from './components/anmition-components/TransitionEffect';
 import TopHeaderEffect from './components/anmition-components/TopHeaderEffect';
 
@@ -44,7 +43,7 @@ export default function RootLayout({ children, params: { lng } }) {
       <body>
         <TopHeaderEffect />
         <Navbar lng={lng} />
-        <HubSProvider>{children}</HubSProvider>
+        {children}
         <TransitionEffect />
       </body>
     </html>

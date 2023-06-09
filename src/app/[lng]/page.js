@@ -3,19 +3,16 @@ import React, { lazy, Suspense } from 'react';
 import Script from 'next/script';
 
 import { useTranslation } from '../i18n';
-import Loading from './Loading';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Offers from './components/Offers';
 import Clients from './components/Clients';
 import Packages from './components/Packages';
-import Contact from './components/Contact';
 import GooMap from './components/GooMap';
 import Footer from './components/Footer';
-import Menu from './components/Menu';
 import ScrollToTop from './components/ScrollToTopCom';
-import Contact2 from './components/Contact2';
 import Whattsapp from './components/Whattsapp';
+import HubSpotForm from './components/HubSpotForm';
 
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng);
@@ -39,8 +36,7 @@ export default async function Page({ params: { lng } }) {
       {/* <Menu lng={lng} /> */}
       <Clients lng={lng} />
       <Packages lng={lng} />
-      {/* <Contact lng={lng} /> */}
-      <Contact2 />
+      <HubSpotForm />
       <GooMap />
       <Footer lng={lng} />
       <ScrollToTop />
