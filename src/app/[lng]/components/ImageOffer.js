@@ -33,7 +33,8 @@ export default function ImageOffer({ lng, mainImg }) {
         >
           <div className='flex items-center  relative '>
             <div className='bg-[#101A24] text-white text-md rounded-full px-1 py-2 absolute -right-[30px] '>
-              Rs{m1.salary}
+              {m1.salary}
+              {t('salarycode')}
             </div>
             <Image
               width={200}
@@ -57,7 +58,8 @@ export default function ImageOffer({ lng, mainImg }) {
         >
           <div className='flex items-center  relative '>
             <div className='bg-[#101A24] text-white text-md rounded-full px-1 py-2 absolute -right-[30px] '>
-              Rs{m2.salary}
+              {m2.salary}
+              {t('salarycode')}
             </div>
             <Image
               width={200}
@@ -81,7 +83,8 @@ export default function ImageOffer({ lng, mainImg }) {
         >
           <div className='flex items-center  relative '>
             <div className='bg-[#101A24] text-white text-md rounded-full px-1 py-2 absolute -right-[30px] '>
-              Rs{m3.salary}
+              {m3.salary}
+              {t('salarycode')}
             </div>
             <Image
               width={200}

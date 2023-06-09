@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-
+import './s.css';
 import { useHubspotForm } from 'next-hubspot';
 export default function Contact2() {
   const { loaded, error, formCreated } = useHubspotForm({
@@ -11,7 +11,7 @@ export default function Contact2() {
   return (
     <div
       id='contact'
-      className='w-[90%] sm:w-[75%] md:w-[50%] flex justify-center mx-auto'
+      className='form w-[90%] sm:w-[75%] md:w-[50%] flex justify-center mx-auto'
     />
   );
 }

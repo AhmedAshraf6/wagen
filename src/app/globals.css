@@ -48,3 +48,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
 }
+.hubspot-link__container {
+  display: none !important;
+}
