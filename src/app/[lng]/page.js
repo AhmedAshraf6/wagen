@@ -5,16 +5,16 @@ const Stats = lazy(() => import('./components/Stats'));
 const Offers = lazy(() => import('./components/Offers'));
 const Clients = lazy(() => import('./components/Clients'));
 const Packages = lazy(() => import('./components/Packages'));
-const GooMap = lazy(() => import('./components/GooMap'));
+// const GooMap = lazy(() => import('./components/GooMap'));
 // const HubSpotForm = lazy(() => import('./components/HubSpotForm'));
-// const GoogleTag = lazy(() => import('./components/GoogleTag'));
+const GoogleTag = lazy(() => import('./components/GoogleTag'));
 const Footer = lazy(() => import('./components/Footer'));
 const ScrollToTopCom = lazy(() => import('./components/ScrollToTopCom'));
 const Whattsapp = lazy(() => import('./components/Whattsapp'));
 export default async function Page({ params: { lng } }) {
   return (
     <main className={lng === 'en' ? 'font-eng' : 'font-arb'}>
-      {/* <GoogleTag /> */}
+      <GoogleTag />
       <Suspense fallback={<Loading />}>
         <Hero lng={lng} />
       </Suspense>
