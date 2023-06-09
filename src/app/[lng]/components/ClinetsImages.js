@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper';
-import img1 from '../../../../public/clients/img1.svg';
-import img2 from '../../../../public/clients/img2.svg';
-import img3 from '../../../../public/clients/img3.svg';
-import img4 from '../../../../public/clients/img4.jpg';
-import img5 from '../../../../public/clients/img5.jpg';
-import img6 from '../../../../public/clients/img6.jpg';
-import img7 from '../../../../public/clients/img7.png';
+import img1 from '../../../../public/clients/img1.webp';
+import img2 from '../../../../public/clients/img2.webp';
+import img3 from '../../../../public/clients/img3.webp';
+import img4 from '../../../../public/clients/img4.webp';
+import img5 from '../../../../public/clients/img5.webp';
+import img6 from '../../../../public/clients/img6.webp';
+import img7 from '../../../../public/clients/img7.webp';
 
 import Image from 'next/image';
 

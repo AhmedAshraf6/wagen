@@ -1,8 +1,4 @@
 import { useTranslation } from '@/app/i18n';
-import Image from 'next/image';
-import img1 from '../../../../public/clients/img1.svg';
-import img2 from '../../../../public/clients/img2.svg';
-import img3 from '../../../../public/clients/img3.svg';
 import ClinetsImages from './ClinetsImages';
 
 const Clients = async ({ lng }) => {

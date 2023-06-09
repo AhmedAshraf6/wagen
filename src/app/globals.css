@@ -37,13 +37,13 @@ body {
   z-index: 9999;
 }
 .image-offer {
-  background-image: url('../../public/img3.png');
+  background-image: url('../../public/img3.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 }
 .image-offer2 {
-  background-image: url('../../public/img2.png');
+  background-image: url('../../public/img2.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
