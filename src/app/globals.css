@@ -38,17 +38,13 @@ body {
 }
 .image-offer {
   background-image: url('../../public/img3.png');
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  /* background-attachment: fixed; */
 }
 .image-offer2 {
   background-image: url('../../public/img2.png');
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  /* background-attachment: fixed; */
 }

@@ -23,7 +23,7 @@ export default function ImageOffer({ lng, mainImg }) {
 
   return (
     <div className='w-full h-full flex justify-center items-center image-offer '>
-      <div className='grid grid-cols-2 items-center gap-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-10'>
         <div
           className={`flex  flex-col w-[200px] bg-[#fff] justify-between items-center rounded-3xl
        }`}

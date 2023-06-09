@@ -21,11 +21,11 @@ export default function ImageOffer2({ lng, mainImg }) {
 
   return (
     <div className='w-full h-[600px] flex justify-center items-center image-offer2 '>
-      <div className='grid grid-cols-2 items-center gap-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 items-start gap-10'>
         <div
-          className={`flex  flex-col w-[200px] bg-[#fff] justify-between items-center rounded-3xl
+          className={`flex  flex-col w-[200px] bg-[#fff] justify-between items-center rounded-3xl 
        }`}
-          data-aos='fade-left'
+          data-aos='fade-down-right'
           data-aos-delay='50'
           data-aos-duration='1000'
         >
@@ -49,7 +49,7 @@ export default function ImageOffer2({ lng, mainImg }) {
         <div
           className={`flex  flex-col w-[200px] bg-[#fff] justify-between items-center rounded-3xl  row-span-2 
        }`}
-          data-aos='fade-right'
+          data-aos='fade-down-left'
           data-aos-delay='100'
           data-aos-duration='1000'
         >
