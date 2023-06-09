@@ -8,7 +8,7 @@ export default function GoogleTag() {
         async
         src='https://www.googletagmanager.com/gtag/js?id=G-GDGGMB6W6Z'
       />
-      <Script id='google-analytics' strategy='worker'>
+      <Script id='google-analytics' strategy='lazyOnload'>
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
