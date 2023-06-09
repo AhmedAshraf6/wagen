@@ -34,11 +34,13 @@ const Packages = ({ lng }) => {
             >
               {t('package1.title')}
             </div>
-            <div className='relative my-3 sm:my-6 text-black'>
-              <span className='text-xl  absolute -top-[8px] start-[41%]'>
-                RS
-              </span>
-              <h2 className='font-bold text-2xl '>{t('package1.salary')}</h2>
+            <div className='flex justify-center'>
+              <div className='relative my-3 sm:my-6 text-black  w-[100px]'>
+                <span className='text-xl  absolute -top-[8px] start-[70%]'>
+                  {t('salaryCode')}
+                </span>
+                <h2 className='font-bold text-2xl '>{t('package2.salary')}</h2>
+              </div>
             </div>
             <div className='flex flex-col gap-y-3 px-7'>
               {benfits1.map((benfit, index) => (
@@ -58,7 +60,7 @@ const Packages = ({ lng }) => {
             </div>
             <div className='flex justify-center mt-5 sm:mt-24'>
               <button
-                className='text-lg text-white bg-primary py-3 px-10 rounded-lg'
+                className='text-lg text-white bg-primary py-3 px-10 rounded-lg hover:bg-transparent border-primary border-2 hover:text-secondary duration-200 transition-all'
                 style={{ borderRadius: '30px / 100px 10px' }}
               >
                 {t('sub')}
@@ -78,11 +80,13 @@ const Packages = ({ lng }) => {
             >
               {t('package2.title')}
             </div>
-            <div className='relative my-3 sm:my-6 text-black'>
-              <span className='text-xl  absolute -top-[8px] start-[41%]'>
-                RS
-              </span>
-              <h2 className='font-bold text-2xl '>{t('package2.salary')}</h2>
+            <div className='flex justify-center'>
+              <div className='relative my-3 sm:my-6 text-black  w-[100px]'>
+                <span className='text-xl  absolute -top-[8px] start-[70%]'>
+                  {t('salaryCode')}
+                </span>
+                <h2 className='font-bold text-2xl '>{t('package2.salary')}</h2>
+              </div>
             </div>
             <div className='flex flex-col gap-y-3 px-7'>
               {benfits2.map((benfit, index) => (
@@ -102,7 +106,7 @@ const Packages = ({ lng }) => {
             </div>
             <div className='flex justify-center mt-5 sm:mt-10'>
               <button
-                className='text-lg text-white bg-secondary py-3 px-10 rounded-lg'
+                className='text-lg text-white bg-secondary py-3 px-10 rounded-lg hover:bg-transparent border-secondary border-2 hover:text-secondary duration-200 transition-all'
                 style={{ borderRadius: '30px / 100px 10px' }}
               >
                 {t('sub')}

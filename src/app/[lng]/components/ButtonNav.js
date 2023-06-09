@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { LangSwitcher } from './LangSwitcher';
 import Link from 'next/link';
 import Image from 'next/image';
-import s from '../../../../public/s.png';
-import b from '../../../../public/b.png';
+import s from '../../../../public//flags/saudi.png';
+import b from '../../../../public/flags/global.png';
 export default function ButtonNav({ navitems, lng }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {

@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import Menu from './components/Menu';
 import ScrollToTop from './components/ScrollToTopCom';
 import Contact2 from './components/Contact2';
+import Whattsapp from './components/Whattsapp';
 
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng);
@@ -35,7 +36,7 @@ export default async function Page({ params: { lng } }) {
       <Hero lng={lng} />
       <Stats lng={lng} />
       <Offers lng={lng} />
-      <Menu lng={lng} />
+      {/* <Menu lng={lng} /> */}
       <Clients lng={lng} />
       <Packages lng={lng} />
       {/* <Contact lng={lng} /> */}
@@ -43,6 +44,7 @@ export default async function Page({ params: { lng } }) {
       <GooMap />
       <Footer lng={lng} />
       <ScrollToTop />
+      <Whattsapp />
     </main>
   );
 }

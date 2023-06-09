@@ -26,7 +26,6 @@ const Navbar = async ({ lng }) => {
       </div>
       <div className='w-full hidden lg:flex items-center justify-between'>
         <Image src={logo} alt='logo image' className='cursor-pointer ' />
-
         <ul className='flex gap-6'>
           {navitems &&
             navitems.map((item, index) => (

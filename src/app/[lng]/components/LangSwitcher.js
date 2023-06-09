@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Trans } from 'react-i18next/TransWithoutContext';
 import { languages } from '../../i18n/settings';
 import { useTranslation } from '../../i18n';
-import s from '../../../../public/s.png';
-import b from '../../../../public/b.png';
+import s from '../../../../public/flags/saudi.png';
+import b from '../../../../public/flags/global.png';
 import Image from 'next/image';
 
 export const LangSwitcher = async ({ lng }) => {

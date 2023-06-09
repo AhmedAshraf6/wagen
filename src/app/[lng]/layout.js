@@ -20,8 +20,8 @@ const eng = Josefin_Sans({
 import '../globals.css';
 import Navbar from './components/Navbar';
 import HubSProvider from './components/HubSProvider';
-import TransitionEffect from './components/TransitionEffect';
-import TopHeaderEffect from './components/TopHeaderEffect';
+import TransitionEffect from './components/anmition-components/TransitionEffect';
+import TopHeaderEffect from './components/anmition-components/TopHeaderEffect';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));

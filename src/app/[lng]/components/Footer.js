@@ -29,18 +29,6 @@ export default async function Footer({ lng }) {
           <div className='flex flex-wrap gap-3'>
             <a
               className='border-2 border-[gray-600] p-2 flex justify-center items-center rounded-full '
-              href='#'
-            >
-              <Image
-                width={200}
-                height={200}
-                className='object-contain w-[20px] h-[20px] '
-                src={img1}
-                alt='asd'
-              />
-            </a>
-            <a
-              className='border-2 border-[gray-600] p-2 flex justify-center items-center rounded-full '
               href='https://twitter.com/wajenSA'
               target='_blank'
             >
@@ -61,18 +49,6 @@ export default async function Footer({ lng }) {
                 height={200}
                 className='object-contain w-[20px] h-[20px]'
                 src={img3}
-                alt='asd'
-              />
-            </a>
-            <a
-              className='border-2 border-[gray-600] p-2 flex justify-center items-center rounded-full '
-              href='#'
-            >
-              <Image
-                width={200}
-                height={200}
-                className='object-contain w-[20px] h-[20px]'
-                src={img4}
                 alt='asd'
               />
             </a>
