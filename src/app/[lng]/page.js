@@ -1,5 +1,4 @@
 import React, { lazy, Suspense } from 'react';
-import Script from 'next/script';
 import Loading from './Loading';
 const Hero = lazy(() => import('./components/Hero'));
 const Stats = lazy(() => import('./components/Stats'));
@@ -11,21 +10,11 @@ const Footer = lazy(() => import('./components/Footer'));
 const ScrollToTopCom = lazy(() => import('./components/ScrollToTopCom'));
 const Whattsapp = lazy(() => import('./components/Whattsapp'));
 const HubSpotForm = lazy(() => import('./components/HubSpotForm'));
+const GoogleTag = lazy(() => import('./components/GoogleTag'));
 export default async function Page({ params: { lng } }) {
   return (
     <main className={lng === 'en' ? 'font-eng' : 'font-arb'}>
-      <Script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-GDGGMB6W6Z'
-      />
-      <Script id='google-analytics' strategy='afterInteractive'>
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GDGGMB6W6Z');
-        `}
-      </Script>
+      <GoogleTag />
       <Suspense fallback={<Loading />}>
         <Hero lng={lng} />
       </Suspense>
