@@ -19,7 +19,7 @@ const eng = Josefin_Sans({
 
 import '../globals.css';
 import Navbar from './components/Navbar';
-import TransitionEffect from './components/anmition-components/TransitionEffect';
+// import TransitionEffect from './components/anmition-components/TransitionEffect';
 import TopHeaderEffect from './components/anmition-components/TopHeaderEffect';
 
 export async function generateStaticParams() {
@@ -44,7 +44,7 @@ export default function RootLayout({ children, params: { lng } }) {
         <TopHeaderEffect />
         <Navbar lng={lng} />
         {children}
-        <TransitionEffect />
+        {/* <TransitionEffect /> */}
       </body>
     </html>
   );
