@@ -14,7 +14,7 @@ const Whattsapp = lazy(() => import('./components/Whattsapp'));
 export default async function Page({ params: { lng } }) {
   return (
     <main className={lng === 'en' ? 'font-eng' : 'font-arb'}>
-      <GoogleTag />
+      {/* <GoogleTag /> */}
       <Suspense fallback={<Loading />}>
         <Hero lng={lng} />
       </Suspense>
