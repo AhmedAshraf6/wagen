@@ -27,8 +27,8 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 export const metadata = {
-  title: 'ويجن',
-  description: 'ويجن',
+  title: 'وجين',
+  description: 'وجين',
   icons: {
     icon: '/favicon.ico',
   },
