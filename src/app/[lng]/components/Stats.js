@@ -14,7 +14,6 @@ import img17 from '../../../../public/stats/background/img7.svg';
 import img18 from '../../../../public/stats/background/img8.svg';
 import img19 from '../../../../public/stats/background/img9.svg';
 import img110 from '../../../../public/stats/background/img10.svg';
-import img111 from '../../../../public/stats/background/img11.svg';
 import img112 from '../../../../public/stats/background/img12.svg';
 // for animation on scroll
 import AOS from 'aos';

@@ -1,10 +1,7 @@
 import React from 'react';
 import { useTranslation } from '@/app/i18n';
-import Image from 'next/image';
 import barcode from '../../../../public/img2.webp';
 import imgmenu from '../../../../public/img3.webp';
-
-import blackiphone from '../../../../public/blackiphone.png';
 import ImageOffer from './ImageOffer';
 import ImageOffer2 from './ImageOffer2';
 const Offers = async ({ lng }) => {

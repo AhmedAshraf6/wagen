@@ -1,10 +1,8 @@
 import React from 'react';
 import { useTranslation } from '@/app/i18n';
 import Image from 'next/image';
-import img1 from '../../../../public/social/img1.svg';
 import img2 from '../../../../public/social/img2.svg';
 import img3 from '../../../../public/social/img3.svg';
-import img4 from '../../../../public/social/img4.svg';
 import copy from '../../../../public/copy.svg';
 export default async function Footer({ lng }) {
   const { t } = await useTranslation(lng, 'footer');

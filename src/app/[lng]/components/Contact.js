@@ -4,19 +4,11 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import Image from 'next/image';
-import img1 from '../../../../public/clients/img1.svg';
 // Back
 import img11 from '../../../../public/stats/background/img1.svg';
 import img12 from '../../../../public/stats/background/img2.svg';
-import img13 from '../../../../public/stats/background/img3.svg';
 import img14 from '../../../../public/stats/background/img4.svg';
-import img15 from '../../../../public/stats/background/img5.svg';
-import img16 from '../../../../public/stats/background/img6.svg';
-import img17 from '../../../../public/stats/background/img7.svg';
 import img18 from '../../../../public/stats/background/img8.svg';
-import img19 from '../../../../public/stats/background/img9.svg';
-import img110 from '../../../../public/stats/background/img10.svg';
-import img111 from '../../../../public/stats/background/img11.svg';
 import img112 from '../../../../public/stats/background/img12.svg';
 import { useTranslation } from '@/app/i18n/client';
 const Contact = ({ lng }) => {

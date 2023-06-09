@@ -1,21 +1,17 @@
-import Link from 'next/link';
 import React, { lazy, Suspense } from 'react';
 import Script from 'next/script';
-
-import { useTranslation } from '../i18n';
-import Hero from './components/Hero';
-import Stats from './components/Stats';
-import Offers from './components/Offers';
-import Clients from './components/Clients';
-import Packages from './components/Packages';
-import GooMap from './components/GooMap';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTopCom';
-import Whattsapp from './components/Whattsapp';
-import HubSpotForm from './components/HubSpotForm';
-
+import Loading from './Loading';
+const Hero = lazy(() => import('./components/Hero'));
+const Stats = lazy(() => import('./components/Stats'));
+const Offers = lazy(() => import('./components/Offers'));
+const Clients = lazy(() => import('./components/Clients'));
+const Packages = lazy(() => import('./components/Packages'));
+const GooMap = lazy(() => import('./components/GooMap'));
+const Footer = lazy(() => import('./components/Footer'));
+const ScrollToTopCom = lazy(() => import('./components/ScrollToTopCom'));
+const Whattsapp = lazy(() => import('./components/Whattsapp'));
+const HubSpotForm = lazy(() => import('./components/HubSpotForm'));
 export default async function Page({ params: { lng } }) {
-  const { t } = await useTranslation(lng);
   return (
     <main className={lng === 'en' ? 'font-eng' : 'font-arb'}>
       <Script
@@ -30,17 +26,37 @@ export default async function Page({ params: { lng } }) {
             gtag('config', 'G-GDGGMB6W6Z');
         `}
       </Script>
-      <Hero lng={lng} />
-      <Stats lng={lng} />
-      <Offers lng={lng} />
-      {/* <Menu lng={lng} /> */}
-      <Clients lng={lng} />
-      <Packages lng={lng} />
-      <HubSpotForm />
-      <GooMap />
-      <Footer lng={lng} />
-      <ScrollToTop />
-      <Whattsapp />
+      <Suspense fallback={<Loading />}>
+        <Hero lng={lng} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Stats lng={lng} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Offers lng={lng} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Clients lng={lng} />
+      </Suspense>
+
+      <Suspense fallback={<Loading />}>
+        <Packages lng={lng} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <HubSpotForm />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <GooMap />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Footer lng={lng} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <ScrollToTopCom />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Whattsapp />
+      </Suspense>
     </main>
   );
 }
