@@ -1,18 +1,17 @@
-'use client';
 import Image from 'next/image';
 import right2 from '../../../../public/right2.svg';
+import { useTranslation } from '@/app/i18n';
 // for animation on scroll
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-import { useTranslation } from '@/app/i18n/client';
-const Packages = ({ lng }) => {
-  const { t } = useTranslation(lng, 'packages');
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import { useEffect } from 'react';
+const Packages = async ({ lng }) => {
+  const { t } = await useTranslation(lng, 'packages');
   const benfits1 = t('package1.benifits', { returnObjects: true });
   const benfits2 = t('package2.benifits', { returnObjects: true });
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <div className='w-full px-5 md:px-15 lg:px-20 py-8 sm:py-24' id='packages'>
       <div className='text-center mb-4 md:mb-12'>
@@ -25,8 +24,6 @@ const Packages = ({ lng }) => {
           <div
             className='bg-[#F7F7F7] text-[#F7F7F7] md:w-[40%] pb-6'
             style={{ borderTopLeftRadius: '100px' }}
-            data-aos='fade-left'
-            data-aos-duration='3000'
           >
             <div
               className='px-20 py-10 flex  justify-center items-center bg-primary text-xl font-bold text-white'
@@ -72,8 +69,6 @@ const Packages = ({ lng }) => {
           <div
             className='bg-[#F7F7F7] text-[#F7F7F7] md:w-[40%] pb-6'
             style={{ borderTopLeftRadius: '100px' }}
-            data-aos='fade-right'
-            data-aos-duration='3000'
           >
             <div
               className='px-20 py-10 flex  justify-center items-center bg-secondary text-xl font-bold text-white'
