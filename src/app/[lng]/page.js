@@ -11,7 +11,11 @@ import ScrollToTopCom from './components/ScrollToTopCom';
 import Whattsapp from './components/Whattsapp';
 import Chat from './components/Chat';
 import HubspotContactForm from './components/HubspotContactForm';
-
+export const metadata = {
+  alternates: {
+    canonical: 'https://wagen.vercel.app',
+  },
+};
 export default async function Page({ params: { lng } }) {
   return (
     <main className={lng === 'en' ? 'font-eng' : 'font-arb'}>
