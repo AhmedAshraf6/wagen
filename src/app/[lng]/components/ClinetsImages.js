@@ -53,7 +53,7 @@ export default function ClinetsImages() {
               height={200}
               className='object-contain w-[150px] h-[150px]'
               src={img1}
-              alt='asd'
+              alt='clients-image'
             />
             <h3 className='text-lg text-black font-semibold'>مطعم لوبان</h3>
           </div>
@@ -65,7 +65,7 @@ export default function ClinetsImages() {
               height={200}
               className='object-contain w-[150px] h-[150px]'
               src={img2}
-              alt='asd'
+              alt='clients-image'
             />
             <h3 className='text-lg text-black font-semibold'>مقهى نبريج</h3>
           </div>
@@ -90,7 +90,7 @@ export default function ClinetsImages() {
               height={200}
               className='object-contain w-[150px] h-[150px]'
               src={img4}
-              alt='asd'
+              alt='clients-image'
             />
           </div>
         </SwiperSlide>
@@ -101,7 +101,7 @@ export default function ClinetsImages() {
               height={200}
               className='object-contain w-[150px] h-[150px]'
               src={img5}
-              alt='asd'
+              alt='clients-image'
             />
           </div>
         </SwiperSlide>
@@ -112,7 +112,7 @@ export default function ClinetsImages() {
               height={200}
               className='object-contain w-[150px] h-[150px]'
               src={img6}
-              alt='asd'
+              alt='clients-image'
             />
           </div>
         </SwiperSlide>
@@ -123,7 +123,7 @@ export default function ClinetsImages() {
               height={200}
               className='object-contain w-[150px] h-[150px]'
               src={img7}
-              alt='asd'
+              alt='clients-image'
             />
           </div>
         </SwiperSlide>

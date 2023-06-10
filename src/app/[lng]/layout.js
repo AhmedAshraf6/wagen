@@ -26,10 +26,15 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 export const metadata = {
+  metadataBase: new URL('https://wagen.vercel.app'),
   title: 'وجين منيو',
-  description: 'وجين منيو',
+  description:
+    'أفضل تطبيق لإدارة قائمة المنتجات الخاصة بك وتوفير الوقت والجهد وتحسين تجربة العملاء.',
   icons: {
     icon: '/favicon.ico',
+  },
+  verification: {
+    google: 'google-site-verification=123123123',
   },
 };
 

@@ -41,7 +41,7 @@ export default function ImageOffer({ lng, mainImg }) {
               height={200}
               className='object-contain w-[140px]'
               src={img1}
-              alt='asd'
+              alt='menu-item-wagen'
             />
           </div>
           <div className='text-center '>
@@ -66,7 +66,7 @@ export default function ImageOffer({ lng, mainImg }) {
               height={200}
               className='object-contain w-[140px]'
               src={img5}
-              alt='asd'
+              alt='menu-item-wagen'
             />
           </div>
           <div className='text-center '>
@@ -91,7 +91,7 @@ export default function ImageOffer({ lng, mainImg }) {
               height={200}
               className='object-contain w-[140px]'
               src={img4}
-              alt='asd'
+              alt='menu-item-wagen'
             />
           </div>
           <div className='text-center '>

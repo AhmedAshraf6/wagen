@@ -28,7 +28,7 @@ export default function ScrollToTopCom() {
           height={200}
           className='object-contain w-[100px] h-[50px] cursor-pointer fixed bottom-8 left-0 z-20'
           src={arrowup}
-          alt='asd'
+          alt='whatts-to-contact-us-wagen'
           onClick={goToTop}
         />
       )}

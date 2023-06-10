@@ -29,7 +29,7 @@ export default async function Hero({ lng }) {
                   height={100}
                   className='object-contain w-[20px] h-[20px]'
                   src={right}
-                  alt='image 1'
+                  alt='right'
                 />
                 <h3 className='text-black text-lg'> {benfit}</h3>
               </div>
@@ -49,7 +49,7 @@ export default async function Hero({ lng }) {
           height={500}
           className='object-contain '
           src={img1}
-          alt='image 1'
+          alt='menu'
         />
       </div>
     </section>

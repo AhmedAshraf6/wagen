@@ -129,7 +129,7 @@ const Stats = ({ lng }) => {
             height={200}
             className='object-contain w-[100px] h-[80px]'
             src={img3}
-            alt='asd'
+            alt='satats-wagen'
           />
           <h1 className='text-[#5F6061] text-lg font-semibold '>{s1}</h1>
         </div>
@@ -145,7 +145,7 @@ const Stats = ({ lng }) => {
             height={200}
             className='object-contain w-[100px] h-[80px]'
             src={img2}
-            alt='asd'
+            alt='satats-wagen'
           />
           <h1 className='text-[#5F6061] text-lg  font-semibold'>{s2}</h1>
         </div>
@@ -161,7 +161,7 @@ const Stats = ({ lng }) => {
             height={200}
             className='object-contain w-[100px] h-[80px]'
             src={img1}
-            alt='asd'
+            alt='satats-wagen'
           />
           <h1 className='text-[#5F6061] text-lg font-semibold '>{s3}</h1>
         </div>
