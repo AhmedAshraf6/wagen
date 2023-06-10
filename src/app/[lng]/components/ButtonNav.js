@@ -37,7 +37,7 @@ export default function ButtonNav({ navitems, lng }) {
           <ul className='flex items-center flex-col justify-center gap-3 text-white'>
             {navitems &&
               navitems.map((item, index) => (
-                <a key={index} href={`#${item.link}`} onClick={toggleMenu}>
+                <a key={index} href={`${item.link}`} onClick={toggleMenu}>
                   {item.name}
                 </a>
               ))}
