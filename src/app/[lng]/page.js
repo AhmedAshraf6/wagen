@@ -6,7 +6,7 @@ const Offers = lazy(() => import('./components/Offers'));
 const Clients = lazy(() => import('./components/Clients'));
 const Packages = lazy(() => import('./components/Packages'));
 const GooMap = lazy(() => import('./components/GooMap'));
-// const HubSpotForm = lazy(() => import('./components/HubSpotForm'));
+const HubSpotForm = lazy(() => import('./components/HubSpotForm'));
 const GoogleTag = lazy(() => import('./components/GoogleTag'));
 const Footer = lazy(() => import('./components/Footer'));
 const ScrollToTopCom = lazy(() => import('./components/ScrollToTopCom'));
@@ -31,9 +31,9 @@ export default async function Page({ params: { lng } }) {
       <Suspense fallback={<Loading />}>
         <Packages lng={lng} />
       </Suspense>
-      {/* <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />}>
         <HubSpotForm />
-      </Suspense> */}
+      </Suspense>
       <Suspense fallback={<Loading />}>
         <GooMap />
       </Suspense>
