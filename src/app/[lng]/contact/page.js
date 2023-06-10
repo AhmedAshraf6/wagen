@@ -1,12 +1,14 @@
 import React, { lazy, Suspense } from 'react';
 import Loading from '../Loading';
-const HubSpotForm = lazy(() => import('../components/HubSpotForm'));
+const HubspotContactForm = lazy(() =>
+  import('../components/HubspotContactForm')
+);
 
 export default async function Page() {
   return (
     <main>
       <Suspense fallback={<Loading />}>
-        <HubSpotForm />
+        <HubspotContactForm />
       </Suspense>
     </main>
   );

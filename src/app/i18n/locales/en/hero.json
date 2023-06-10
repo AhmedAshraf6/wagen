@@ -2,7 +2,7 @@
   "navItems": [
     { "name": "Home", "link": "#home" },
     { "name": "Packages", "link": "#packages" },
-    { "name": "Contact Us", "link": "/contact" }
+    { "name": "Contact Us", "link": "#contact" }
   ],
   "title1": "الجيل الجديد من المنيو الالكترونية ",
   "title2": "أفضل تطبيق لإدارة قائمة المنتجات الخاصة بك وتوفير الوقت والجهد وتحسين تجربة العملاء.",

@@ -10,6 +10,9 @@ const GoogleTag = lazy(() => import('./components/GoogleTag'));
 const Footer = lazy(() => import('./components/Footer'));
 const ScrollToTopCom = lazy(() => import('./components/ScrollToTopCom'));
 const Whattsapp = lazy(() => import('./components/Whattsapp'));
+const HubspotContactForm = lazy(() =>
+  import('./components/HubspotContactForm')
+);
 export default async function Page({ params: { lng } }) {
   return (
     <main className={lng === 'en' ? 'font-eng' : 'font-arb'}>
@@ -30,9 +33,9 @@ export default async function Page({ params: { lng } }) {
       <Suspense fallback={<Loading />}>
         <Packages lng={lng} />
       </Suspense>
-      {/* <Suspense fallback={<Loading />}>
-        <HubSpotForm />
-      </Suspense> */}
+      <Suspense fallback={<Loading />}>
+        <HubspotContactForm />
+      </Suspense>
       <Suspense fallback={<Loading />}>
         <GooMap />
       </Suspense>
