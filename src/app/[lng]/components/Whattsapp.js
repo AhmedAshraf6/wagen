@@ -8,7 +8,8 @@ export default function Whattsapp() {
   return (
     <Link
       className='relative'
-      href='//api.whatsapp.com/send?phone=00966506963328'
+      href='//api.whatsapp.com/send?phone=966506963328'
+      target='_blank'
     >
       <Image
         width={200}

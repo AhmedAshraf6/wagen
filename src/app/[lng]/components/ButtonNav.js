@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { LangSwitcher } from './LangSwitcher';
 import Link from 'next/link';
 import Image from 'next/image';
-import s from '../../../../public/flags/saudi.webp';
 import b from '../../../../public/flags/global.webp';
 export default function ButtonNav({ navitems, lng }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +46,7 @@ export default function ButtonNav({ navitems, lng }) {
                   width={100}
                   height={100}
                   className='object-contain w-[20px] h-[20px]'
-                  src={s}
+                  src={b}
                   alt='image 1'
                 />
                 العربية

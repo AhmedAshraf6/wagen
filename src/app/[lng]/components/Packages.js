@@ -59,12 +59,13 @@ const Packages = ({ lng }) => {
               ))}
             </div>
             <div className='flex justify-center mt-5 sm:mt-24'>
-              <button
+              <a
                 className='text-lg text-white bg-primary py-3 px-10 rounded-lg hover:bg-transparent border-primary border-2 hover:text-secondary duration-200 transition-all'
                 style={{ borderRadius: '30px / 100px 10px' }}
+                href='#contact'
               >
                 {t('sub')}
-              </button>
+              </a>
             </div>
           </div>
           {/* Package 2 */}
@@ -105,12 +106,13 @@ const Packages = ({ lng }) => {
               ))}
             </div>
             <div className='flex justify-center mt-5 sm:mt-10'>
-              <button
+              <a
                 className='text-lg text-white bg-secondary py-3 px-10 rounded-lg hover:bg-transparent border-secondary border-2 hover:text-secondary duration-200 transition-all'
                 style={{ borderRadius: '30px / 100px 10px' }}
+                href='#contact'
               >
                 {t('sub')}
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Trans } from 'react-i18next/TransWithoutContext';
 import { languages } from '../../i18n/settings';
 import { useTranslation } from '../../i18n';
-import s from '../../../../public/flags/saudi.webp';
 import b from '../../../../public/flags/global.webp';
 import Image from 'next/image';
 
@@ -34,7 +33,7 @@ export const LangSwitcher = async ({ lng }) => {
                     width={100}
                     height={100}
                     className='object-contain w-[20px] h-[20px]'
-                    src={s}
+                    src={b}
                     alt='image 1'
                   />
                 )}
