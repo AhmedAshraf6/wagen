@@ -20,8 +20,13 @@ export default function ImageOffer2({ lng, mainImg }) {
   }, []);
 
   return (
-    <div className='w-full h-[600px] flex justify-center items-center image-offer2 '>
-      <div className='grid grid-cols-1 sm:grid-cols-2 items-start gap-10'>
+    <div
+      className='w-full h-[600px] flex justify-center items-center image-offer2 '
+      data-aos='zoom-out-down'
+      data-aos-delay='100'
+      data-aos-duration='2000'
+    >
+      {/* <div className='grid grid-cols-1 sm:grid-cols-2 items-start gap-10'>
         <div
           className={`flex  flex-col w-[200px] bg-[#fff] justify-between items-center rounded-3xl 
        }`}
@@ -72,7 +77,7 @@ export default function ImageOffer2({ lng, mainImg }) {
             <p className='text-black text-md mt-2'>{m5.disc}</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
