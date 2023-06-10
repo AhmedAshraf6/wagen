@@ -37,6 +37,9 @@ export const metadata = {
     description:
       'أفضل تطبيق لإدارة قائمة المنتجات الخاصة بك وتوفير الوقت والجهد وتحسين تجربة العملاء.',
   },
+  alternates: {
+    canonical: 'https://wagen.vercel.app',
+  },
 };
 
 export default function RootLayout({ children, params: { lng } }) {
