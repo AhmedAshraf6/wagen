@@ -15,12 +15,12 @@ export default async function Hero({ lng }) {
     >
       <div className='w-full flex flex-col lg:flex-row justify-start lg:justify-between items-start gap-5'>
         <div className='flex flex-col gap-y-4'>
-          <h3 className='text-black font-bold text-lg lg:text-xl'>
+          <h1 className='text-black font-bold text-lg lg:text-xl'>
             {t('title1')}
-          </h3>
-          <h4 className='text-black font-semibold text-lg lg:text-xl'>
+          </h1>
+          <h2 className='text-black font-semibold text-lg lg:text-xl'>
             {t('title2')}
-          </h4>
+          </h2>
           <div>
             {benfits.map((benfit, index) => (
               <div className='flex py-2 gap-2' key={index}>

@@ -21,21 +21,19 @@ import '../globals.css';
 import Navbar from './components/Navbar';
 import TransitionEffect from './components/anmition-components/TransitionEffect';
 import TopHeaderEffect from './components/anmition-components/TopHeaderEffect';
-import Script from 'next/script';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 export const metadata = {
-  metadataBase: new URL('https://wagen.vercel.app'),
   title: 'وجين منيو',
   description:
     'أفضل تطبيق لإدارة قائمة المنتجات الخاصة بك وتوفير الوقت والجهد وتحسين تجربة العملاء.',
   icons: {
     icon: '/favicon.ico',
   },
-  verification: {
-    google: 'google-site-verification=123123123',
+  alternates: {
+    canonical: 'https://wagen.vercel.app',
   },
 };
 
@@ -49,6 +47,7 @@ export default function RootLayout({ children, params: { lng } }) {
       <body>
         <TopHeaderEffect />
         <Navbar lng={lng} />
+
         {children}
         <TransitionEffect />
       </body>

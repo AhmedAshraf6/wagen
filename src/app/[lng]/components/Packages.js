@@ -11,6 +11,7 @@ const Packages = ({ lng }) => {
   const { t } = useTranslation(lng, 'packages');
   const benfits1 = t('package1.benifits', { returnObjects: true });
   const benfits2 = t('package2.benifits', { returnObjects: true });
+
   useEffect(() => {
     AOS.init();
   }, []);
