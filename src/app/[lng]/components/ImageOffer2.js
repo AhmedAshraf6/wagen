@@ -22,7 +22,7 @@ export default function ImageOffer2({ lng, mainImg }) {
   return (
     <div
       className='w-full h-[600px] flex justify-center items-center image-offer2 '
-      data-aos='zoom-out-down'
+      data-aos='zoom-in-down'
       data-aos-delay='100'
       data-aos-duration='2000'
     >
