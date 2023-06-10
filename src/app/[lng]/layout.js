@@ -32,6 +32,11 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  openGraph: {
+    title: 'وجين منيو',
+    description:
+      'أفضل تطبيق لإدارة قائمة المنتجات الخاصة بك وتوفير الوقت والجهد وتحسين تجربة العملاء.',
+  },
   alternates: {
     canonical: 'https://wagen.vercel.app',
   },
