@@ -28,8 +28,8 @@ export default async function Page({ params: { lng } }) {
       <GooMap />
       <Footer />
       <ScrollToTopCom />
-      <Whattsapp />
-      {/* <Chat /> */}
+      {/* <Whattsapp /> */}
+      <Chat />
       <GoogleTag />
     </main>
   );

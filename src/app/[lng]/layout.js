@@ -21,6 +21,7 @@ import '../globals.css';
 import Navbar from './components/Navbar';
 import TransitionEffect from './components/anmition-components/TransitionEffect';
 import TopHeaderEffect from './components/anmition-components/TopHeaderEffect';
+import Script from 'next/script';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -52,7 +53,7 @@ export default function RootLayout({ children, params: { lng } }) {
       <body>
         <TopHeaderEffect />
         <Navbar lng={lng} />
-
+        <Script async src='https://js.hs-scripts.com/139691288.js' />
         {children}
         <TransitionEffect />
       </body>

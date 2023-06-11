@@ -1,12 +1,18 @@
 'use client';
+import Script from 'next/script';
 import React, { useEffect } from 'react';
 
-export default function Chat() {
+const Chat = () => {
   return (
-    <iframe
-      src='hhttps://js-eu1.hs-scripts.com/139691288.js'
-      width='1500px'
-      height='500px'
-    ></iframe>
+    <>
+      {' '}
+      <Script
+        async
+        src='https://js.hs-scripts.com/139691288.js'
+        strategy='lazyOnload'
+      />
+    </>
   );
-}
+};
+
+export default Chat;
