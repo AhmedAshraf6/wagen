@@ -26,6 +26,7 @@ import Script from 'next/script';
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
+
 export const metadata = {
   title: 'وجين منيو',
   description:
