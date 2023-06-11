@@ -53,7 +53,6 @@ export default function RootLayout({ children, params: { lng } }) {
       <body>
         <TopHeaderEffect />
         <Navbar lng={lng} />
-        <Script async src='https://js.hs-scripts.com/139691288.js' />
         {children}
         <TransitionEffect />
       </body>

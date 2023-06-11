@@ -5,7 +5,6 @@ import React, { useEffect } from 'react';
 const Chat = () => {
   return (
     <>
-      {' '}
       <Script
         async
         src='https://js.hs-scripts.com/139691288.js'
